@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ClientComponent from "./ClientComponent"
 
 function App() {
   const [loadClient, setLoadClient] = useState(true)
+
+  useEffect(() => {
+    console.log(process.env.BACKEND_ENDPOINT);
+  }, [])
 
   return (
     <>
