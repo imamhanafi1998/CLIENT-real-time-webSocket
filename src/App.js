@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <button onClick={() => {setLoadClient(prevState => !prevState)}}>
-        STOP CLIENT
+        START/STOP CLIENT
       </button>
       {loadClient ? <ClientComponent /> : null}
     </>
