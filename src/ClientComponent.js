@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import socketIOClient from 'socket.io-client'
 // import logo from './logo.svg';
 // import './App.css';
-const ENDPOINT = process.env.BACKEND_ENDPOINT
+const ENDPOINT = "https://server-real-time-websocket-service.onrender.com"
 
 const ClientComponent = () => {
     const [response, setResponse] = useState("")
